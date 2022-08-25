@@ -1,0 +1,915 @@
+@import "./assets/sass/bs/bootstrap"
+@import "./assets/sass/bodyreset"
+@import "./assets/sass/custom-theme"
+$same: #0c2769
+$darker: #0a1d4f
+$altern: #017dbb
+$darkerx: darken($altern, 40%)
+a
+  cursor: pointer 
+.wrapper
+  height: 100vh
+  min-width: 100%
+  width: 100%
+  padding: 0
+
+.Adminstyle:is(.menu-sidenav)
+  background-color: $darkerx
+.Userstyle:is(.menu-sidenav)
+  background-color: $same
+
+.Clientstyle:is(.menu-sidenav,.header)
+  background-color: $altern
+.bkgShadow
+  box-shadow: -2rem 0rem 1rem 2rem rgb(#000, .6)
+.bkgNoShadow
+  box-shadow: -2rem 0rem 1rem 2rem rgb(#000, 0)
+.navbar
+  padding: 0
+  h5
+    text-align: right
+    background: linear-gradient(to left, rgba($altern, .6), rgba($darkerx,.6) 100%)
+    width: 100%
+    padding: 30px 12px
+    .logo-txt
+      text-align: center
+      max-width: 260px
+      display: block
+  .navbar-nav
+    width: 100%
+    padding: 0
+  ul
+    padding: 0
+    display: block
+    li
+      padding: 4px 0
+  .nav-item
+    margin: 0
+    padding: 0 20px
+    line-height: 40px
+    display: block
+    transition: .3s
+    color: #f1f1f1
+    &:hover
+      background: rgba(#000, .6)
+      padding-left: 30px
+      padding-right: 10px
+      text-shadow: 0 .4rem .6rem rgba(#000, .6)
+
+    &.active, &:active
+      text-shadow: 0 .4rem .6rem rgba(#000, .4)
+      color: #fff
+      background: linear-gradient(to right, rgba($darkerx, .6), rgba($altern,.6) 100%)
+      box-shadow: 0 0 1rem rgba(#000, .3)
+      padding-left: 30px
+      padding-right: 10px
+      cursor: pointer
+
+.titulo-detalle
+  font-size: 1.3em
+  color: #0c2769
+  position: relative
+  text-align: left
+  border-bottom: 1px solid #eee
+  line-height: 40px
+  &::after
+    content: ""
+    position: absolute
+    bottom: -3px
+    left: 2px
+    background-color: #63adfb
+    height: 3px
+    width: 42px
+    border-radius: 4px
+
+.small
+  font-size: .6em
+  a
+    font-size: .6em
+
+.f-right
+  float: right
+  line-height: 30px
+  a
+    color: #666
+  .mat-icon
+    vertical-align: middle
+.f-left
+  float: left
+  line-height: 30px
+  a
+    color: #666
+  .mat-icon
+    vertical-align: middle
+
+.main-wrapper
+  height: 100%
+  height: 100vh
+  width: 100%
+  overflow: hidden
+
+.container-main
+  height: 100%
+  height: 100vh
+  padding: 20px 0
+  width: 100%
+  background-color: #E7EBF4
+  overflow: hidden
+  overflow-y: auto
+  &.menuHideFixHeight
+    height: calc(100vh - 60px)
+    // background-color: #ff0
+  &.desktop
+    height: calc(100vh - 156px)
+    // background-color: #f00
+
+.container-header
+  height: 140px
+  line-height: 20px
+  width: 100%
+  display: contents
+  padding: 10px 0
+  position: fixed
+
+.mw-60
+  width: 60px
+  max-width: 80px
+.foot-legend
+  position: fixed
+  bottom: 0
+.header
+  height: 60px
+  display: block
+  line-height: 80px
+  a
+    padding: 0
+    margin: 0
+    width: 60px
+    height: 60px
+    display: inline-block
+    text-align: center
+    border: 0
+    cursor: auto
+    &:focus, &:hover
+      border: 0
+    i
+      width: 60px
+      cursor: pointer
+.iconMenu
+  max-width: 60px
+  padding: 0
+  background-color: transparent
+.searchBox
+  padding: 0
+.menu-Left
+  width: 120px
+.menu-right
+  text-align: right
+  width: 100%
+.iconAlarm
+  display: inline-block
+  text-align: center
+  max-width: 60px
+  padding: 0
+  background-color: transparent
+  &:hover
+    animation: shake 0.5s
+    animation-iteration-count: 1
+@keyframes shake
+  0%
+    transform: rotate(0)
+  15%
+    transform: rotate(5deg)
+  30%
+    transform: rotate(-5deg)
+  45%
+    transform: rotate(4deg)
+  60%
+    transform: rotate(-4deg)
+  75%
+    transform: rotate(2deg)
+  85%
+    transform: rotate(-2deg)
+  92%
+    transform: rotate(1deg)
+  100%
+    transform: rotate(0)
+
+// .searchSection
+//   height: 60px
+//   vertical-align: middle
+.profileBox
+  display: inline-block
+  min-width: 60px
+  max-width: calc(100% - 60px)
+  padding: 0 0
+  text-align: left
+  .userLog
+    border: 1px solid #f0f0f0
+  .dropdown-toggle::after
+    display: none
+  .dropdown-item
+    padding: 0 10px
+    line-height: 30px
+    &:hover, &:active
+      background-color: #00ba95
+      color: #f1f1f1
+
+  .button-profile
+    width: auto
+    padding: 0
+    vertical-align: middle
+    border: none
+    overflow: hidden
+    height: 40px
+    display: inline-block
+    background-color: transparent
+    border-radius: 30px
+    text-align: left
+    &:hover, &:focus
+      background-color: rgba(#f1f1f1,.6)
+  .circle-profile
+    line-height: 40px
+    height: 40px
+    width: 40px
+    display: inline-block
+    border-radius: 30px
+    vertical-align: top
+    img
+      border-radius: 30px
+      height: 100%
+      display: block
+  .text-profile
+    vertical-align: top
+    line-height: 40px
+    height: 40px
+    display: inline-block
+.sidebarHeader
+  // height: 60px
+  padding: 1em 10px
+  overflow: hidden
+.iconArrow
+  display: inline-block
+  width: 30px
+  height: 40px
+  line-height: 38px
+  margin: 10px 0
+  overflow: hidden
+  vertical-align: middle
+  color: #f1f1f1
+  &.rotateArrow
+    transform: scaleX(-1)
+  &:hover
+    color: #f1f1f1
+.myPanelClass
+    margin-top: 30px !important
+
+.logo-banner
+  vertical-align: baseline
+  // height: 60px
+  width: calc(100% - 40px)
+  padding: 0
+  text-align: center
+  display: inline-block
+  .logo-img
+    background-color: rgba(#fff,.6)
+    border-radius: 100px
+    transition: .3s
+    display: inline-block
+    border: 4px solid rgba(#fff, .3)
+    &:hover
+      background-color: rgba(#fff,.8)
+      box-shadow: 0 0 1em rgba(#fff, 0.5)
+  .logo-txt
+    background-color: rgba(#fff,.8)
+    display: block
+  img
+    border-radius: 100px
+    width: 100%
+    max-width: 160px
+    display: inline-block
+
+input
+  outline: none
+
+input[type=search]
+  -webkit-appearance: textfield
+  -webkit-box-sizing: content-box
+  font-family: inherit
+  font-size: 100%
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button
+  display: none
+
+input[type=search]
+  background: #ededed url('~assets/img/iconos/search.svg') no-repeat 9px center
+  border: solid 1px #efefef
+  padding: 9px 10px 9px 30px
+  width: 0px
+  max-width: 300px
+  min-width: 0px
+  height: 20px
+  font-size: .85em
+  -webkit-border-radius: 10em
+  -moz-border-radius: 10em
+  border-radius: 10em
+  -webkit-transition: all .5s
+  -moz-transition: all .5s
+  transition: all .5s
+
+input[type=search]:focus
+  width: calc(100% - 40px)
+  background-color: #fff
+  border-color: #00BA96
+  -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5)
+  -moz-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5)
+  box-shadow: 0 0 5px rgba(109, 207, 246, 0.5)
+
+input:-moz-placeholder
+  color: #999
+
+input::-webkit-input-placeholder
+  color: #999
+
+.menu-sidenav
+  height: 100vh
+  min-width: 280px
+  max-width: 320px
+  overflow: hidden
+  overflow-y: auto
+.main
+  height: 100%
+  height: 100vh
+.accordion
+  &.opened
+    .accordion-item
+      background-color: rgba(#0a1d4f, .1)
+      // background: lighten(#09f,.8)
+      // background: linear-gradient(to right, rgba(#0a1d4f, .6), rgba(#0c2769,.6) 100%)
+  .accordion-item
+    border: 0
+
+.accordion-collapse
+  li
+    .nav-item.nav-link
+      padding: 0 20px 0 40px
+  &.show
+    // text-shadow: 0 .4rem .6rem rgba(#000, .4)
+    padding-left: 10px
+    color: #fff
+    border-top: 1px solid #eee
+    // background: linear-gradient(to right, rgba(#0a1d4f, .6), rgba(#0c2769,.6) 100%)
+    box-shadow: 0 0 1rem rgba(#000, 0)
+
+.accordion-toggle
+  .icono
+    width: 28px
+    height: 28px
+    float: right
+    transition: .3s
+    i
+      display: inline-block
+      height: 28px
+      width: 28px
+  &.collapsed
+    .icono
+      i
+        transform: rotate(-90deg)
+
+// .mat-slide-toggle-content
+//   font-family: inherit
+//   color: #444
+
+#accordionMenu
+  .nav-item
+    display: inline-block
+    padding-bottom: 0
+  .subMenu
+    display: inline-block
+    color: #121212
+    li
+      display: inline-block
+      a
+        color: #121212
+        font-size: 14px
+        &:hover
+          color: #FF5B16
+
+
+.close-button
+  border: 0 solid green
+  position: absolute
+  top: 20px
+  right: 20px
+  background: transparent
+  &:focus
+    background: transparent
+    border: 0
+.confirm-button
+  border: 0
+  margin: 0 6px
+  padding: 0 16px
+  line-height: 40px
+  border-radius: 30px
+  height: 40px
+  width: auto
+  // max-width: 120px
+  background-color: #0C2769
+  color: #fff
+  border: 1px solid #0C2769
+  transition: .3s
+  &:hover
+    border: 1px solid #0C2769
+    color: #0C2769
+    background-color: #fff
+    box-shadow: 0 .2rem .6rem -.2rem rgba(#333, .8)
+  &:active
+    background-color: rgba(#0C2769, .8)
+    color: #fff
+    border: 1px solid rgba(#0C2769, .8)
+.cancel-button
+  border: 0
+  // margin: 0 6px
+  padding: 0 16px
+  line-height: 40px
+  border-radius: 30px
+  height: 40px
+  width: auto
+  // max-width: 180px
+  border: 1px solid #e0e0e0
+  color: #fff
+  background-color: #e0e0e0
+  transition: .3s
+  &:hover
+    border: 1px solid #e0e0e0
+    color: #fff
+    background-color: #e0e0e0
+    box-shadow: 0 0 0 rgba(#000, 0)
+  &:active
+    background-color: rgba(#0C2769, .8)
+    color: #fff
+    border: 1px solid rgba(#0C2769, .8)
+
+#matTree
+  .mat-checkbox-layout
+    align-items: center
+
+.btn-custom
+  border: 0
+  line-height: 40px
+  border-radius: 30px
+  height: 40px
+  width: 100%
+  max-width: 280px
+  background-color: #0C2769
+  color: #fff
+  border: 1px solid #0C2769
+  transition: .3s
+  &:hover
+    border: 1px solid #0C2769
+    color: #0C2769
+    background-color: #fff
+    box-shadow: 0 .2rem .6rem -.2rem rgba(#333, .8)
+  &:active
+    background-color: rgba(#0C2769, .8)
+    color: #fff
+    border: 1px solid rgba(#0C2769, .8)
+
+.password-info-tooltip
+  white-space: pre-line !important
+
+.avatar-user-img
+  cursor: pointer
+  border-radius: 50%
+  width: 130px
+  height: 130px
+  overflow: hidden
+  object-fit: cover
+  border: 2px solid #c5c5c5
+
+.menu-block
+  margin: 0 auto
+  display: inline-block
+  width: 100%
+  text-align: center
+.horizontal-menu
+  width: 100%
+  // background: orange
+  li
+    padding: 0 4px
+    display: inline-block
+
+  .nav-item.nav-link
+    display: inline-block
+    padding: 6px
+    color: #333
+    // background: red
+
+.carousel
+  z-index: 0
+
+.dropdown-menu.show
+  display: flex
+  z-index: 99999
+
+.combo-menu
+  margin: 0 auto
+  .main-menu
+    li
+      // padding: .25em
+      font-size: 1em
+  li
+    display: inline-block
+    padding-top: 4px
+    padding-bottom: 4px
+    a
+      text-decoration: none
+      color: #404040
+//       // padding: 0 .4em
+//       font-size: .9em
+//       line-height: 30px
+//       transition: .3s
+//       i
+//         transition: .3s
+//         color: #E7EBF4
+//         &.no-activo
+//           color: #9CAEC6
+//       &.w-color
+//         color: #FF5B16
+//       &:hover
+//         color: #FF5B16
+//         i
+//           color: #FF5B16
+
+@keyframes fade
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+router-outlet + *
+  display: block
+  animation: fade 1s
+
+// checks radios
+
+.form-check-input[type=checkbox]
+  // border-radius: 0.25em
+  margin: 0.6em 0 0
+  padding: 8px
+  box-shadow: none
+.form-check-input[type=radio]
+  // border-radius: 0.25em
+  margin: 0.6em 0 0
+  padding: 8px
+  box-shadow: none
+
+.stepperClass
+  min-height: 300px
+  background-color: #f1f1f1
+  padding: 2em
+
+  // &.no-padding
+  //   padding: 0
+
+.cardClass
+  border: 1px solid #e0e0e0
+  background-color: #fff
+  border-radius: 1em
+  padding: 16px
+  // max-width: 320px
+  width: 80%
+  max-width: 682px
+  min-width: 320px
+  // min-height: 462px
+  margin: auto
+
+  &.tower-geofence, &.tower-aprobation
+    width: 100%
+    max-width: 900px
+    padding: 16px 0 0
+    // min-height: 400px
+
+.default-tooltip
+  padding: 10px 8px
+  font-size: .9em
+  background-color: rgba(#000, .85)
+  box-shadow: none
+  border: 0
+
+#stepper
+  width: 70%
+  height: 462px
+  min-height: 462px
+
+.mat-horizontal-stepper-header-container
+  //width: 66%
+  white-space: nowrap
+  display: flex
+  align-items: center
+
+.mat-stepper-horizontal .mat-horizontal-content-container
+  padding: 0
+
+.l-no-rounded
+  .mat-form-field-wrapper
+    .mat-form-field-outline-start
+      border-radius: 0 0 0 0
+      // background-color: red
+
+.r-no-rounded
+  .mat-form-field-wrapper
+    .mat-form-field-outline-end
+      border-radius: 0 0 0 0
+      // background-color: blue
+.mat-form-field-type-mat-select
+  .mat-form-field-flex
+    max-height: 63px
+
+.inlineInputs
+  .mat-form-field-type-mat-select
+    .mat-form-field-flex
+      max-height: 64px
+  // .mat-select
+  //   height: 19px
+
+
+.mat-form-field-appearance-outline .mat-form-field-outline-thick
+  color: #599CF8
+.mat-form-field-flex
+  &:hover
+    .icob-picker
+      color: #599CF8
+
+.mat-form-field
+  input::placeholder
+    font-size: .6em
+
+.mat-chip.mat-chip-box
+  font-size: 1em
+  line-height: 26px
+
+.chip-evo
+  border-radius: 8px
+  font-size: .6em
+
+
+.mat-form-field.mat-focused .mat-form-field-label
+  color: #FF5B16
+
+.mat-checkbox-layout
+  align-items: center !important
+
+.mat-checkbox-ripple,
+.mat-radio-ripple,
+.mat-button-ripple,
+.mat-button-focus-overlay
+  height: 0 !important
+  width: 0 !important
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-ripple .mat-ripple-element
+  opacity: 0.03 !important
+  background-color: #0d6efd
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background
+  background-color: #0d6efd
+.mat-checkbox-ripple .mat-ripple-element,
+.mat-checkbox-checked.mat-accent .mat-checkbox-background
+  background-color: #0d6efd
+
+
+//
+#listadosSort
+
+  //  encapsulation: ViewEncapsulation.None
+  // text-align: left
+
+  border-radius: 0
+  max-width: 100%
+  width: 100%
+  scrollbar-width: thin
+  overflow: hidden
+  overflow-x: auto
+  padding-bottom: 0 !important
+
+  .mat-footer-row,
+  .mat-header-row,
+  .mat-row
+    display: inline-flex
+    min-width: 100%
+    border: 0
+    height: 64px
+  .mat-row:nth-child(even)
+    background-color: #f9f9f9
+  .mat-row:nth-child(odd)
+    background-color: #fff
+  // .mat-row
+  //   border: 0
+  //   position: relative
+    &:hover
+      background-color: #efefef
+      mat-cell: first-of-type
+        padding: 0 !important
+      mat-header-cell: first-of-type
+        padding: 0 !important
+      mat-cell: last-of-type
+        padding: 0 !important
+      mat-header-cell: last-of-type
+        padding: 0 !important
+  button
+    margin: 0 auto
+    text-align: center
+    background: transparent
+    padding: 0
+    outline: 0
+    border: 0
+  strong
+    display: block
+    width: 100%
+    padding: 4px
+    margin: 0 auto
+    text-align: left
+    font-size: 1.1em
+    color: #0b266a
+    &:hover
+      color: #707070
+  span, a
+    display: block
+    font-size: 1em
+    width: 100%
+    padding: 4px
+    margin: 0 auto
+
+  .mat-column-name
+    // background: red
+    // width: 100px
+    min-width: 120px
+    // max-width: 100px
+    mat-header-cell:nth-child(1), mat-cell:nth-child(1)
+      // width: 100px
+      min-width: 120px
+    span
+      text-align: left
+  .mat-column-weight
+    // background: red
+    // width: 100px
+    min-width: 120px
+    // max-width: 100px
+    mat-header-cell:nth-child(1), mat-cell:nth-child(1)
+      // width: 100px
+      min-width: 120px
+    span
+      text-align: left
+  .mat-column-symbol
+    // background: red
+    // width: 100px
+    min-width: 120px
+    // max-width: 100px
+    mat-header-cell:nth-child(1), mat-cell:nth-child(1)
+      // width: 100px
+      min-width: 120px
+    span
+      text-align: left
+//   .mat-column-position
+    // background: red
+    // width: 100px
+    min-width: 120px
+    // max-width: 100px
+    mat-header-cell:nth-child(1), mat-cell:nth-child(1)
+      // width: 100px
+      min-width: 120px
+    span
+      text-align: left
+      // max-width: 60px
+// mat-ripple mat-button-ripple mat-button-ripple-round
+// .mat-form-field
+//   &.mat-focused
+//     color: brown
+//     .mat-form-field-label
+//       color: lime
+//     .mat-form-field-ripple
+//       background-color: #06f !important
+
+// .mat-form-field-label,.mat-form-field-label.mat-focused,
+// .mat-form-field.mat-focused.matform-field-should-float
+//   color: #ff0
+
+// .mat-form-field-underline, .mat-form-field-underline.mat-focused
+//   background-color: #06f
+.classPosition
+  background-color: red
+  color: blue
+
+td.mat-cell:first-of-type.mat-column-expandedDetail
+  padding: 0
+td.mat-cell:last-of-type.mat-column-expandedDetail
+  padding: 0
+.table-container.mat-table-basic
+  border: 1px solid #8293AA
+  border-radius: 12px
+  background-color: red
+  padding: 0
+  overflow: hidden
+.mat-column-expandedDetail
+  padding: 0
+
+//   .mat-row
+//     // margin: 10px
+//     // padding: 10px
+//     // background-color: rgba(#ff0,.8)
+//     background-color: rgba(#f00,.8)
+//   .mat-cell, .mat-header-cell
+//     background-color: rgba(#ff0,.8)
+//     span, strong
+//       width: calc(100% / 4)
+//     // display: inline-flex
+//     // span, a, button
+//     //   height: 42px
+//     //   min-height: 0
+
+
+  // .mat--adius: 0 12px 12px 0
+
+  // // mat-header-cell:nth-child(1), mat-cell:nth-child(1)
+  // //   min-width: 100px
+  // //   border-radius: 18px !important
+  // .mat-row.example-detail-row
+  //   background-color: rgba(lime, .6)
+  //   height: 0
+  //   margin: 0
+  //   padding: 0
+  //   .mat-cell
+  //     display: inline-block
+  //     margin: 0
+  //     padding: 0
+  //     height: auto
+  //     border: 0
+  //     background-color: rgba(#06f, .6)
+  //     border-radius: 0
+  //     div, .example-expanded-row
+  //       background-color: rgba(pink, .6)
+  //       display: inline-block
+  //       margin: 0
+  //       padding: 0
+  //       height: 0
+  //       overflow: hidden
+
+
+  // .mat-column-expandedDetail
+  //   border-radius: 0
+  //   width: 100%
+  //   // span
+  // //   margin: 10px 0
+  // //   // background-color: rgba(#E7EBF4,.8)
+  //   background-color: rgba(#000,.6)
+  // //   color: red
+  // //   border: 0
+// .mat-responsive
+//   overflow-x: auto
+
+.breadcrumb-item
+  color: #404040
+  &.active
+    color: #FF5B16
+.display-6
+  font-size: 2em
+
+  .mat-form-field-wrapper
+    .mat-form-field-outline-start
+      border-radius: 0 0 0 0
+      // background-color: red
+
+.r-no-rounded
+  .mat-form-field-wrapper
+    .mat-form-field-outline-end
+      border-radius: 0 0 0 0
+      // background-color: blue
+.mat-form-field-type-mat-select
+  .mat-form-field-flex
+    max-height: 63px
+
+.inlineInputs
+  .mat-form-field-type-mat-select
+    .mat-form-field-flex
+      max-height: 64px
+  // .mat-select
+  //   height: 19px
+
+
+.mat-form-field-appearance-outline .mat-form-field-outline-thick
+  color: #599CF8
+.mat-form-field-flex
+  &:hover
+    .icob-picker
+      color: #599CF8
+
+.mat-form-field
+  input::placeholder
+    font-size: .6em
+
+.mat-chip.mat-chip-box
+  font-size: 1em
+  line-height: 26px

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="16" viewBox="0 0 32 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_2078" data-name="Rectángulo 2078" width="32" height="16" rx="8" transform="translate(11274 367)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_4716" data-name="Grupo 4716" transform="translate(-11274 -367)">
+    <rect id="Rectángulo_2077" data-name="Rectángulo 2077" width="32" height="16" rx="8" transform="translate(11274 367)" fill="#3f8df8"/>
+    <g id="Enmascarar_grupo_110" data-name="Enmascarar grupo 110" clip-path="url(#clip-path)">
+      <text id="_20_" data-name="20+" transform="translate(11281 379)" fill="#fff" font-size="12" font-family="NeueHaasUnicaW1G-Regular, Neue Haas Unica W1G"><tspan x="0" y="0">20+</tspan></text>
+    </g>
+  </g>
+</svg>

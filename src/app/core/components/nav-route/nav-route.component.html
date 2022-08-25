@@ -1,0 +1,14 @@
+    <div class="nav-route" *ngIf="item != null">
+      <div class="align">
+        <span *ngIf="item != null && item.rootNode != null && item.rootNode.label != ''"><a [routerLink]="item.rootNode.url">{{item.rootNode.label}}</a></span>
+
+        <span *ngIf="item != null && item.sectionNode.label != ''" class="separator">/</span>
+
+        <span *ngIf="item != null && item.subSectionNode.label != ''"><a [routerLink]="item.sectionNode.url">{{item.sectionNode.label}}</a> </span>
+        <span *ngIf="item != null && item.subSectionNode.label == ''" class="selected">{{item.sectionNode.label}} </span>
+
+        <span *ngIf="item != null && item.subSectionNode.label != ''" class="separator">/</span>
+
+        <span *ngIf="item != null && item.subSectionNode.label != ''" class="selected">{{item.subSectionNode.label}}</span>
+      </div>
+    </div>

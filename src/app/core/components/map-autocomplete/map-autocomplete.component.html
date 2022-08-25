@@ -1,0 +1,10 @@
+<mat-form-field class="d-block" appearance="outline">
+    <mat-label>Ubicación Física</mat-label>
+    <input #addressInput ngx-google-places-autocomplete (onAddressChange)="handleAddressChange($event)" matInput placeholder="Dirección para centrar el mapa">
+</mat-form-field>
+
+<!-- <div *ngIf="apiLoaded | async"> -->
+    <google-map height="300px" width="container-fluid" [options]="options" (mapClick)="addMarker($event)" [center]="userCenter">
+        <map-marker [position]="userLatLng" [options]="userLatLng" ></map-marker>
+    </google-map>
+<!-- </div> -->

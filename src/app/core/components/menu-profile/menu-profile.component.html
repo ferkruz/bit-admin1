@@ -1,0 +1,71 @@
+<div class="row">
+  <div class="col-2 text-end px-0">
+    <a id="mnuConfig" data-bs-toggle="dropdown" aria-expanded="false">
+      <img class="setting" src="assets/icons/icon-config.svg" alt="">
+    </a>
+    <div aria-labelledby="mnuConfig" class="dropdown-menu" id="show-menu-config">
+      <a class="nav-link" routerLink="/towers">
+        <i class="uil uil-map-pin-alt"></i>
+        <span class="px-2">Torres</span>
+      </a>
+      <a class="nav-link" routerLink="/contingencies">
+        <i class="uil uil-book"></i>
+        <span class="px-2">Contingencia</span>
+      </a>
+      <a class="nav-link" routerLink="/alerts">
+        <i class="uil uil-sunset"></i>
+        <span class="px-2">Alertas</span>
+      </a>
+      <a class="nav-link" routerLink="/users">
+        <i class="uil uil-users-alt"></i>
+        <span class="px-2">Usuarios</span>
+      </a>
+      <!-- <a class="nav-link" routerLink="/settings">
+        <i class="uil uil-cog"></i>
+        <span class="px-2">Configuración</span>
+      </a> -->
+    </div>
+  </div>
+  <div class="col-3 px-1 text-end">
+      <a id="menu-lang" data-bs-toggle="dropdown" aria-expanded="false">
+        <span class="">ES</span>
+          <i class="icon ico-chevron-down no-activo"></i>
+      </a>
+      <div aria-labelledby="menu-lang" class="dropdown-menu" id="show-menu-lang">
+        <a class="nav-link" routerLink="#">
+          <span class="px-2">Español</span>
+        </a>
+        <a class="nav-link" routerLink="#">
+          <span class="px-2">English</span>
+        </a>
+        <a class="nav-link" routerLink="#">
+          <span class="px-2">Portuguese</span>
+        </a>
+      </div>
+
+  </div>
+  <div class="col-7 px-0 text-start">
+    <div class="button-profile-user" data-bs-toggle="dropdown" aria-expanded="false" data-placement="bottom">
+
+      <a href=""><span class="">
+          <img src="assets/img/example-photo.png" style="object-fit: cover; width: 30px" alt="user">
+        </span>
+        <span class="" style="font-size: 14px; margin-left: 5px; margin-right: 5px;"><b>{{user?.firstName}} {{user?.lastName}}</b></span>
+        <i class="icon ico-chevron-down no-activo"></i></a>
+    </div>
+    <div id="show-menu-perfil" class="show" aria-labelledby="mnuProfile" class="dropdown-menu">
+      <a class="nav-link" routerLink="#">
+        <i class="uil uil-user"></i>
+        <span class="px-2">Perfil</span>
+      </a>
+      <a class="nav-link" routerLink="#">
+        <i class="uil uil-padlock"></i>
+        <span class="px-2">Contraseña</span>
+      </a>
+      <a class="nav-link" routerLink="#">
+        <i class="uil uil-sign-out-alt"></i>
+        <span class="px-2">Logout</span>
+      </a>
+    </div>
+  </div>
+</div>

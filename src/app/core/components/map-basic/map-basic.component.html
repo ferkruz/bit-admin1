@@ -1,0 +1,22 @@
+<google-map
+  height="500px"
+  width="100%"
+  [zoom]="zoom"
+  [center]="center"
+  [options]="options"
+  (mapInitialized)="initMap($event)"
+>
+<map-marker
+    #markerElem
+    *ngFor="let marker of markers"
+    [position]="marker.position"
+    [label]="marker.label"
+    [title]="marker.title"
+    [options]="marker.options"
+   ></map-marker>
+
+<!-- <map-marker [position]="userLatLng" [options]="userLatLng" ></map-marker>
+<map-marker [position]="userLatLngDest" [options]="userLatLngDest" ></map-marker>
+<map-marker [position]="userLatLngTruck" [options]="userLatLngTruck" ></map-marker> -->
+</google-map>
+

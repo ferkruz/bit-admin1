@@ -1,0 +1,635 @@
+@charset "UTF-8"
+
+@font-face
+  font-family: "belogiticons"
+  src: url("/assets/fonts/icons/belogiticons.eot")
+  src: url("/assets/fonts/icons/belogiticons.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/icons/belogiticons.woff") format("woff"), url("/assets/fonts/icons/belogiticons.ttf") format("truetype"), url("/assets/fonts/icons/belogiticons.svg#belogiticons") format("svg")
+  font-weight: normal
+  font-style: normal
+
+[data-iconb]:before
+  font-family: "belogiticons" !important
+  content: attr(data-iconb)
+  font-style: normal !important
+  font-weight: normal !important
+  font-variant: normal !important
+  text-transform: none !important
+  // speak: none
+  line-height: 1
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+[class^="icob-"]:before, [class*=" icob-"]:before
+  font-family: "belogiticons" !important
+  font-style: normal !important
+  font-weight: normal !important
+  font-variant: normal !important
+  text-transform: none !important
+  // speak: none
+  line-height: 1
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.iconb
+  padding: 0
+  font-size: 1.4em
+  vertical-align: -0.34em
+
+.iconb-box
+  .iconb
+    line-height: 1em
+    font-size: 1.4em
+    vertical-align: middle
+
+.icon-standard
+  overflow: hidden
+  height: 30px
+  width: 32px
+  line-height: 40px
+  display: inline-block
+  vertical-align: middle
+  .iconb
+    font-size: 1.8em
+    width: 32px
+    display: block
+
+.icob-lg
+  font-size: 1.33333em
+  line-height: 0.75em
+  vertical-align: -.0667em
+
+.icob-xs
+  font-size: .75em
+
+.icob-sm
+  font-size: .875em
+
+.icob-stepper
+  font-size: 1.15em
+
+.icob-picker
+  font-size: 1.15em
+  vertical-align: unset
+
+.icob-chip
+  font-size: 1.15em
+  vertical-align: unset
+
+.icob-mat-chip
+  font-size: 1.15em
+  vertical-align: -.0667em
+
+.icob-1x
+  font-size: 1em
+
+.icob-2x
+  font-size: 2em
+
+.icob-3x
+  font-size: 3em
+
+.icob-4x
+  font-size: 4em
+
+.icob-5x
+  font-size: 5em
+
+.icob-6x
+  font-size: 6em
+
+.icob-7x
+  font-size: 7em
+
+.icob-8x
+  font-size: 8em
+
+.icob-9x
+  font-size: 9em
+
+.icob-10x
+  font-size: 10em
+
+.icob-fw
+  text-align: center
+  width: 1.25em
+
+.icob-ul
+  list-style-type: none
+  margin-left: 2.5em
+  padding-left: 0
+  > li
+    position: relative
+
+.icob-li
+  left: -2em
+  position: absolute
+  text-align: center
+  width: 2em
+  line-height: inherit
+
+.icob-accessible-icon-alt:before
+  content: "\61"
+
+.icob-angle-double-down:before
+  content: "\62"
+
+.icob-angle-double-right:before
+  content: "\63"
+
+.icob-angle-double-up:before
+  content: "\64"
+
+.icob-angle-left:before
+  content: "\65"
+
+.icob-angle-right:before
+  content: "\66"
+
+.icob-angle-right-b:before
+  content: "\67"
+
+.icob-arrow:before
+  content: "\68"
+
+.icob-arrow-circle-down:before
+  content: "\69"
+
+.icob-arrow-circle-right:before
+  content: "\6a"
+
+.icob-arrow-down:before
+  content: "\6b"
+
+.icob-arrow-down-left:before
+  content: "\6c"
+
+.icob-arrow-down-right:before
+  content: "\6d"
+
+.icob-arrow-up:before
+  content: "\6e"
+
+.icob-arrows-v:before
+  content: "\6f"
+
+.icob-asterisk:before
+  content: "\70"
+
+.icob-award:before
+  content: "\71"
+
+.icob-bag:before
+  content: "\72"
+
+.icob-bars:before
+  content: "\73"
+
+.icob-bolt:before
+  content: "\74"
+
+.icob-bolt-slash:before
+  content: "\75"
+
+.icob-book:before
+  content: "\76"
+
+.icob-building:before
+  content: "\77"
+
+.icob-calculator:before
+  content: "\78"
+
+.icob-calendar-alt:before
+  content: "\79"
+
+.icob-calender:before
+  content: "\7a"
+
+.icob-camera:before
+  content: "\41"
+
+.icob-camera-plus:before
+  content: "\42"
+
+.icob-chart-pie:before
+  content: "\43"
+
+.icob-check:before
+  content: "\44"
+
+.icob-check-square:before
+  content: "\46"
+
+.icob-clock:before
+  content: "\47"
+
+.icob-clock-eight:before
+  content: "\48"
+
+.icob-clock-two:before
+  content: "\49"
+
+.icob-cloud-moon:before
+  content: "\4a"
+
+.icob-cloud-moon-hail:before
+  content: "\4b"
+
+.icob-cloud-rain:before
+  content: "\4c"
+
+.icob-cloud-rain-sun:before
+  content: "\4d"
+
+.icob-cloud-showers-heavy:before
+  content: "\4e"
+
+.icob-cloud-sun:before
+  content: "\4f"
+
+.icob-cloud-sun-rain:before
+  content: "\50"
+
+.icob-cloud-sun-rain-alt:before
+  content: "\51"
+
+.icob-cloud-sun-tear:before
+  content: "\52"
+
+.icob-cloud-times:before
+  content: "\53"
+
+.icob-cloud-upload:before
+  content: "\54"
+
+.icob-cloud-wind:before
+  content: "\55"
+
+.icob-clouds:before
+  content: "\56"
+
+.icob-comment-alt-lines:before
+  content: "\57"
+
+.icob-comment-alt-message:before
+  content: "\58"
+
+.icob-comment-alt-verify:before
+  content: "\59"
+
+.icob-comment-dots:before
+  content: "\5a"
+
+.icob-comment-slash:before
+  content: "\30"
+
+.icob-copy-alt:before
+  content: "\31"
+
+.icob-corner-right-down:before
+  content: "\32"
+
+.icob-corner-up-left:before
+  content: "\33"
+
+.icob-corner-up-right-alt:before
+  content: "\34"
+
+.icob-direction:before
+  content: "\35"
+
+.icob-envelope-add:before
+  content: "\38"
+
+.icob-envelope-check:before
+  content: "\39"
+
+.icob-envelope-exclamation:before
+  content: "\21"
+
+.icob-envelope-question:before
+  content: "\22"
+
+.icob-envelope-share:before
+  content: "\23"
+
+.icob-envelopes:before
+  content: "\24"
+
+.icob-euro-circle:before
+  content: "\25"
+
+.icob-exit:before
+  content: "\26"
+
+.icob-export:before
+  content: "\27"
+
+.icob-external-link-alt:before
+  content: "\28"
+
+.icob-eye:before
+  content: "\29"
+
+.icob-facebook:before
+  content: "\2a"
+
+.icob-facebook-f:before
+  content: "\2b"
+
+.icob-file-blank:before
+  content: "\2c"
+
+.icob-file-check-alt:before
+  content: "\2d"
+
+.icob-file-download-alt:before
+  content: "\2e"
+
+.icob-file-edit-alt:before
+  content: "\2f"
+
+.icob-file-info-alt:before
+  content: "\3a"
+
+.icob-file-landscape-alt:before
+  content: "\3b"
+
+.icob-file-medical:before
+  content: "\3c"
+
+.icob-file-redo-alt:before
+  content: "\3d"
+
+.icob-file-search-alt:before
+  content: "\3e"
+
+.icob-file-share-alt:before
+  content: "\3f"
+
+.icob-file-upload:before
+  content: "\40"
+
+.icob-file-upload-alt:before
+  content: "\5b"
+
+.icob-filter:before
+  content: "\5d"
+
+.icob-folder-check:before
+  content: "\5e"
+
+.icob-folder-info:before
+  content: "\5f"
+
+.icob-folder-open:before
+  content: "\60"
+
+.icob-folder-plus:before
+  content: "\7b"
+
+.icob-folder-slash:before
+  content: "\7c"
+
+.icob-folder-upload:before
+  content: "\7d"
+
+.icob-grip-horizontal-line:before
+  content: "\7e"
+
+.icob-heart-sign:before
+  content: "\5c"
+
+.icob-history:before
+  content: "\e000"
+
+.icob-image:before
+  content: "\e001"
+
+.icob-info:before
+  content: "\e002"
+
+.icob-label:before
+  content: "\e003"
+
+.icob-language:before
+  content: "\e004"
+
+.icob-lightbulb:before
+  content: "\e005"
+
+.icob-link:before
+  content: "\e006"
+
+.icob-link-add:before
+  content: "\e007"
+
+.icob-linkedin-alt:before
+  content: "\e008"
+
+.icob-location-pin-alt:before
+  content: "\e009"
+
+.icob-location-point:before
+  content: "\e00a"
+
+.icob-lock:before
+  content: "\e00b"
+
+.icob-lock-access:before
+  content: "\e00c"
+
+.icob-lock-alt:before
+  content: "\e00d"
+
+.icob-lock-open-alt:before
+  content: "\e00e"
+
+.icob-map-marker:before
+  content: "\e00f"
+
+.icob-map-marker-question:before
+  content: "\e010"
+
+.icob-map-marker-shield:before
+  content: "\e011"
+
+.icob-map-marker-slash:before
+  content: "\e012"
+
+.icob-meh:before
+  content: "\e013"
+
+.icob-minus:before
+  content: "\e014"
+
+.icob-mobile-android-alt:before
+  content: "\e015"
+
+.icob-money-bill-slash:before
+  content: "\e016"
+
+.icob-pen:before
+  content: "\e017"
+
+.icob-plus:before
+  content: "\e018"
+
+.icob-plus-circle:before
+  content: "\e019"
+
+.icob-puzzle-piece:before
+  content: "\e01a"
+
+.icob-qrcode-scan:before
+  content: "\e01b"
+
+.icob-refresh:before
+  content: "\e01c"
+
+.icob-registered:before
+  content: "\e01d"
+
+.icob-repeat:before
+  content: "\e01e"
+
+.icob-rss:before
+  content: "\e01f"
+
+.icob-ruler:before
+  content: "\e020"
+
+.icob-search-plus:before
+  content: "\e021"
+
+.icob-share-alt:before
+  content: "\e022"
+
+.icob-sitemap:before
+  content: "\e023"
+
+.icob-skip-forward-alt:before
+  content: "\e024"
+
+.icob-sliders-v:before
+  content: "\e025"
+
+.icob-smile-beam:before
+  content: "\e026"
+
+.icob-snowflake:before
+  content: "\e027"
+
+.icob-sort:before
+  content: "\e028"
+
+.icob-spinner-alt:before
+  content: "\e029"
+
+.icob-star:before
+  content: "\e02a"
+
+.icob-sunset:before
+  content: "\e02b"
+
+.icob-surprise:before
+  content: "\e02c"
+
+.icob-sync-exclamation:before
+  content: "\e02d"
+
+.icob-tag-alt:before
+  content: "\e02e"
+
+.icob-thumbs-up:before
+  content: "\e02f"
+
+.icob-thunderstorm-sun:before
+  content: "\e030"
+
+.icob-toggle-off:before
+  content: "\e032"
+
+.icob-twitter-alt:before
+  content: "\e033"
+
+.icob-user-minus:before
+  content: "\e034"
+
+.icob-user-square:before
+  content: "\e035"
+
+.icob-users-alt:before
+  content: "\e036"
+
+.icob-travels:before
+  content: "\e038"
+
+.icob-video-slash:before
+  content: "\e039"
+
+.icob-webcam:before
+  content: "\e03a"
+
+.icob-wifi:before
+  content: "\e03b"
+
+.icob-wifi-slash:before
+  content: "\e03c"
+
+.icob-wind:before
+  content: "\e03d"
+
+.icob-wind-sun:before
+  content: "\e03e"
+
+.icob-truck-loading:before
+  content: "\e040"
+
+.icob-icons:before
+  content: "\e03f"
+
+.icob-calculator-alt:before
+  content: "\e041"
+
+.icob-file-bookmark-alt:before
+  content: "\e042"
+
+.icob-fleet:before
+  content: "\e043"
+
+.icob-steering:before
+  content: "\e044"
+
+.icob-trip-in-progress:before
+  content: "\e037"
+
+.icob-book-open:before
+  content: "\e045"
+
+.icob-arrow-growth:before
+  content: "\e046"
+
+.icob-carrier:before
+  content: "\e047"
+
+.icob-fleet-alt:before
+  content: "\e048"
+
+.icob-times-square:before
+  content: "\e031"
+
+.icob-check-circle:before
+  content: "\45"
+
+.icob-user:before
+  content: "\e049"
+
+.icob-dollar-sign:before
+  content: "\36"
+
+.icob-edit-alt:before
+  content: "\37"
+
+.icob-elipsis-double-v-alt:before
+  content: "\e04a"

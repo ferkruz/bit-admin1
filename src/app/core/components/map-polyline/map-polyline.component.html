@@ -1,0 +1,26 @@
+ <google-map
+             [options]="options"
+             [width]="width"
+             [height]="height"
+             (mapClick)="mapClick($event)"
+             (mapInitialized)="initMap($event)"
+  ></google-map>
+<!--  height="300px"
+    width="100%"
+    [zoom]="zoom"
+    [center]="center"
+
+    (mapClick)="eventHandler($event,'mapClick')"
+    (positionChanged)="eventHandler($event,'marker_positionChanged')"
+  >
+    <map-marker
+      #markerElem="mapMarker"
+      *ngFor="let marker of markers"
+      [position]="marker.position"
+      [label]="marker.label"
+      [title]="marker.title"
+
+      (mapClick)="openInfo(markerElem, marker.info)"
+    >
+    </map-marker> -->
+

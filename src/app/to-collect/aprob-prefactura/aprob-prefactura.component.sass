@@ -1,0 +1,287 @@
+.formattedTable
+  // border: 1px solid #8293AA
+  border-radius: 12px
+  background-color: #fff
+  padding: 0
+  overflow: hidden
+  overflow-x: auto
+.checksTable
+  width: 100%
+  // overflow: hidden
+  padding: 10px
+  // button
+  //   text-align: center
+  //   background: transparent
+  //   padding: 0
+  //   outline: 0
+  //   border: 0
+  //   width: 100%
+  // .mat-sort-header
+  //   display: block
+  //   text-align: center
+  //   .mat-sort-header-arrow
+  //     display: none !important
+  //     width: 0% !important
+  tr.mat-row
+    background-color: #E7EBF4
+  tr.mat-row,
+  tr.mat-header-row
+    // background-color: #ff0
+
+      /* height: 48px */
+    margin: 16px 0
+    /* padding: 16px */
+    border: 0
+    display: table
+    width: 100%
+    border-radius: 12px
+    /* border-bottom: 0 */
+
+
+
+  th.mat-cell,
+  th.mat-header-cell
+    margin-bottom: 10px
+    border-bottom: 0
+    padding: 8px
+    strong
+      font-size: 1.1em
+
+
+  td.mat-cell,
+  td.mat-header-cell
+    margin-bottom: 10px
+    border-bottom: 0
+    span, strong
+      padding: 8px
+    // width: calc(100% / 5)
+  td.mat-cell:first-of-type
+    // background-color: #f00
+    border-radius: 12px 0 0 12px
+    width: 40px
+  td.mat-cell:last-of-type
+    // background-color: #f00
+    border-radius: 0 12px 12px 0
+
+
+  th.mat-header-cell > strong:first-child,
+  td.mat-cell > strong:first-child
+    display: block
+  th.mat-header-cell > span:first-child
+    display: block
+  td.mat-cell > span:first-child
+    background-color: #E7EBF4
+    display: block
+  tr.mat-row.selected-row
+    display: inline-block
+    height: auto
+    border: 2px solid #0d6efd
+    border-radius: 14px
+  tr.mat-row.unselected-row
+    display: inline-block
+    height: auto
+    border: 2px solid transparent
+    border-radius: 14px
+    // overflow: hidden
+
+  .xs-btn
+    padding: 2px 8px
+    color: #fff
+    background-color: #2358a4
+    border-radius: 10px
+    font-size: .9em
+
+
+
+.mat-paginator
+  padding: 0
+// #formattedTable
+// ['select', 'id', 'deliveryDate', 'shipper', 'totalAmount', 'docType', 'docReceived', 'docInput', 'docAttached']
+
+.mat-column-select
+  // background: red
+  width: 60px
+  // width: calc(100% / 9)
+  min-width: 60px
+  max-width: 60px
+  mat-header-cell:nth-child(1), mat-cell:nth-child(1)
+    // width: 60px
+    min-width: 60px
+  span
+    // width: 60px
+    text-align: left
+    // max-width: 60px
+.mat-column-id
+  // background: aqua
+  // width: 130px
+  width: calc(100% / 9)
+  min-width: 130px
+  mat-header-cell:nth-child(1), mat-cell:nth-child(1)
+    // width: 130px
+    min-width: 130px
+  span
+    text-align: left
+    // max-width: 60px
+
+.mat-column-deliveryDate
+  // background: green
+  // width: 240px
+  width: calc(100% / 9)
+  min-width: 240px
+  mat-header-cell:nth-child(1), mat-cell:nth-child(1)
+    // width: 240px
+    min-width: 240px
+  span
+    text-align: left
+    // max-width: 60px
+
+.mat-column-shipper
+  // background: yellow
+  // width: 380px
+  width: calc(100% / 9)
+  min-width: 380px
+  mat-header-cell:nth-child(1), mat-cell:nth-child(1)
+    // width: 380px
+    min-width: 380px
+  span
+    text-align: left
+
+.mat-column-totalAmount
+  // background: pink
+  // width: 120px
+  width: calc(100% / 9)
+  min-width: 120px
+  mat-header-cell:nth-child(1), mat-cell:nth-child(1)
+    // width: 120px
+    min-width: 120px
+
+  strong
+    text-align: right
+  span
+    text-align: right
+
+.mat-column-docType
+  // background: lime
+  // width: 120px
+  width: calc(100% / 9)
+  min-width: 120px
+  mat-header-cell:nth-child(1), mat-cell:nth-child(1)
+    // width: 120px
+    min-width: 120px
+  span
+    text-align: left
+.mat-column-docReceived
+  // background: orange
+  // width: 80px
+  width: calc(100% / 9)
+  min-width: 80px
+  mat-header-cell:nth-child(1), mat-cell:nth-child(1)
+    // width: 80px
+    min-width: 80px
+  span
+    text-align: center
+.mat-column-docInput
+  // background: lightblue
+  // width: 80px
+  width: calc(100% / 9)
+  min-width: 80px
+  mat-header-cell:nth-child(1), mat-cell:nth-child(1)
+    // width: 80px
+    min-width: 80px
+  span
+    text-align: center
+
+.mat-column-docAttached
+  // background: purple
+  // width: 170px
+  width: calc(100% / 9)
+  min-width: 170px
+  mat-header-cell:nth-child(1), mat-cell:nth-child(1)
+    // width: 170px
+    min-width: 170px
+  span
+    text-align: center
+  a // button
+    font-size: .9em
+
+// MODAL
+
+h2.modal-title
+  font-size: 1.2em
+.btn-group.views
+  background-color: #9CAEC6
+  border-radius: 6px
+  vertical-align: middle
+  a.btn
+    border-radius: 6px
+    &.active
+      background-color: #0d6efd
+
+.btn-actions
+  font-size: .9em
+  .btn
+    font-size: .9em
+    margin: 0
+    color: #fff
+
+.thumbs
+  img
+    width: 100%
+    background-color: #ddd
+    border-radius: 6px
+  .sm-title
+    font-size: .8em
+  .posRel
+    position: relative
+  .card-img
+    // overflow: hidden
+    padding: .4em
+    display: block
+    // position: relative
+  .icon-dropdown
+    text-shadow: 0 .4rem .6rem rgba(#000, .6)
+    color: #fff
+    right: .3em
+.lists
+  img
+    background-color: #ddd
+    border-radius: 6px
+    width: 80px
+    float: left
+  .sm-title
+    font-size: 1em
+    padding: 0 10px
+  .posRel
+    position: relative
+  .card-img
+    // overflow: hidden
+    padding: .4em
+    display: block
+    // position: relative
+  .icon-dropdown
+    // background-color: #ff0
+    overflow: hidden
+    right: .2em
+
+.icon-dropdown
+  position: absolute
+  width: 30px
+  height: 30px
+  text-align: center
+  top: .6em
+  cursor: pointer
+  // background-color: yellow
+@media (min-width: 992px)
+  .modal-dialog
+    max-width: 60%
+
+
+.offcanvas-bottom
+  height: 80px
+  &.show
+    width: 100%
+
+
+
+
+    

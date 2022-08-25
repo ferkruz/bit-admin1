@@ -1,0 +1,18 @@
+<google-map
+  [height]="height"
+  [width]="width"
+  [zoom]="zoom"
+  [center]="{ lat: -34.6083, lng: -58.3712 }"
+  [options]="options"
+  (mapInitialized)="initMap($event)">
+
+  <map-marker
+    #markerElem
+    *ngFor="let marker of markers"
+    [position]="marker.position"
+    [label]="marker.label"
+    [title]="marker.title"
+    [options]="marker.options"
+    (mapClick)="openInfo(marker)">
+  </map-marker>
+</google-map>

@@ -1,0 +1,9 @@
+<div class="towerSelect">
+  <select class="form-select form-select-sm" aria-label=".form-select-sm example" (change)="onChange($event.target)">
+    <option *ngFor="let tower of towers" [value]="tower.id">
+      {{ tower.name }}
+    </option>
+  </select>
+</div>
+
+

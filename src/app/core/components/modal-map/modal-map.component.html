@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-11">
+  <h4 class="modal-title text-center">{{data.tripUUID}}</h4>
+  </div>
+  <div class="col-1 text-end">
+    <img src="/assets/iconos/icon-close.svg" alt="" mat-dialog-close>
+  </div>
+</div>
+<div class="row">
+  <app-map-basic [tripId]="data.tripId" [alert]="data.alert" [zoom]="data.zoom"></app-map-basic>
+</div>

@@ -1,0 +1,197 @@
+html
+  width: 100%
+
+html *
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  &:after, &:before
+    box-sizing: border-box
+
+body
+  height: 100%
+  height: 100vh
+  overflow: hidden !important
+  width: 100%
+
+a, a:hover
+  transition: .3s
+  outline: 0
+  outline-color: transparent
+  text-decoration: none !important
+
+button, button:focus
+  transition: .3s
+  outline: 0 !important
+
+ul, li
+  list-style-type: none
+
+.btn
+  margin: 5px
+  transition: .3s
+  font-size: 11px
+
+.btn:hover
+  box-shadow: 0 0 0 0.1rem rgba(#000, 0.2)
+  transition: .3s
+
+.row
+  padding: 0
+  margin: 0
+  background-color: #FFF
+
+label
+  height: 40px
+  padding: 0 4px
+  line-height: 40px
+
+// [class*='col-']
+//   float: left
+//   padding-right: 20px
+//   // padding-bottom: 20px
+//   &:last-of-type
+//     padding-right: 0
+// .mat-drawer-container
+//   position: static !important
+
+.mat-drawer-content
+  position: static !important
+
+// kit
+.btn, button
+  text-transform: uppercase
+  border-radius: 48px
+  &:active, &:focus, &:hover
+    box-shadow: none !important
+    outline: none
+.navbar-toggler:focus
+  outline: none !important
+  box-shadow: none
+.btn-link
+  background-color: transparent
+
+hr
+  margin: 2em 0
+// h3
+  // margin: 2em 0
+p
+  padding: 2em 0
+
+.fallback-backdrop
+  position: absolute
+  background-color: rgba(#000, .6)
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: -1
+
+.text-accent
+  color: #FF5B16 !important
+
+a.text-accent
+  &:focus, &:hover
+    color: #FF5B16 !important
+
+.btn-accent
+  color: #fff
+  background-color: #FF5B16
+  border-color: #FF5B16
+  &:hover
+    color: #fff
+    background-color: #dc5217
+    border-color: #cf4c14
+  &.focus, &:focus
+    -webkit-box-shadow: 0 0 4px 0.1rem rgba(#FF5B16, 0.3)
+    box-shadow: 0 0 4px 0.1rem rgba(#FF5B16, 0.3)
+    // rgb(0, 123, 255)
+    // CAMBIO
+    // box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.5)
+  &.disabled, &:disabled
+    color: #fff
+    background-color: #FF5B16
+    border-color: #e05113
+  &:not(:disabled):not(.disabled)
+    &.active, &:active
+      color: #fff
+      background-color: #e15215
+      border-color: #be4714
+
+.show > .btn-accent.dropdown-toggle
+  color: #fff
+  background-color: #e15215
+  border-color: #e15215
+
+.btn-accent:not(:disabled):not(.disabled)
+  &.active:focus, &:active:focus
+    -webkit-box-shadow: 0 0 4px 0.1rem rgba(#FF5B16, 0.3)
+    box-shadow: 0 0 4px 0.1rem rgba(#FF5B16, 0.3)
+
+.show > .btn-accent.dropdown-toggle:focus
+  -webkit-box-shadow: 0 0 4px 0.1rem rgba(#FF5B16, 0.3)
+  box-shadow: 0 0 4px 0.1rem rgba(#FF5B16, 0.3)
+
+
+.btn-outline-accent
+  color: #FF5B16
+  background-color: transparent
+  background-image: none
+  border-color: #FF5B16
+  &:hover
+    color: #fff
+    background-color: #FF5B16
+    border-color: #FF5B16
+  &.focus, &:focus
+    -webkit-box-shadow: 0 0 4px 0.1rem rgba(#FF5B16, 0.3)
+    box-shadow: 0 0 4px 0.1rem rgba(#FF5B16, 0.3)
+  &.disabled, &:disabled
+    color: #FF5B16
+    background-color: transparent
+  &:not(:disabled):not(.disabled)
+    &.active, &:active
+      color: #fff
+      background-color: #FF5B16
+      border-color: #FF5B16
+
+.show > .btn-outline-accent.dropdown-toggle
+  color: #fff
+  background-color: #FF5B16
+  border-color: #FF5B16
+
+.btn-outline-accent:not(:disabled):not(.disabled)
+  &.active:focus, &:active:focus
+    -webkit-box-shadow: 0 0 4px 0.1rem rgba(#FF5B16, 0.3)
+    box-shadow: 0 0 4px 0.1rem rgba(#FF5B16, 0.3)
+
+.show > .btn-outline-accent.dropdown-toggle:focus
+  -webkit-box-shadow: 0 0 4px 0.1rem rgba(#FF5B16, 0.3)
+  box-shadow: 0 0 4px 0.1rem rgba(#FF5B16, 0.3)
+
+.alert-accent
+  color: #FF5B16
+  background-color: rgba(#FF5B16, 0.3)
+  border-color: rgba(#FF5B16, 0.5)
+  hr
+    border-top-color: rgba(#FF5B16, 0.8)
+  .alert-link
+    color: #FF5B16
+
+.alert-default
+  color: #444
+  background-color: rgba(#fff, 0.3)
+  border-color: rgba(#444, 0.5)
+  hr
+    border-top-color: rgba(#444, 0.8)
+  .alert-link
+    color: #444
+
+
+.btn-group
+  button, .btn
+    margin: 0
+
+.chip
+  text-transform: none
+
+
